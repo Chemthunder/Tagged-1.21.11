@@ -28,7 +28,7 @@ import static net.minecraft.commands.Commands.literal;
 @SuppressWarnings("unused")
 public class TagCommand {
     public static void create(CommandDispatcher<CommandSourceStack> dispatcher, CommandBuildContext registryAccess, Commands.CommandSelection environment) {
-        dispatcher.register(literal("tagged")
+        dispatcher.register(literal("status")
                 .then(literal("set")
                         .then(argument("tag", StringArgumentType.word())
                                 .suggests(TagCommand::buildTagSuggestions)
