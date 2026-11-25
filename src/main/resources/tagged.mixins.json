@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "org.apostasy.tagged.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ItemMixin",
+    "LivingEntityMixin",
+    "MobMixin",
+    "PlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+  ]
+}
